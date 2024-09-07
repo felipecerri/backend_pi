@@ -19,4 +19,14 @@ public class favoritosService {
         
     }
     
+    public favoritosEntity criarFavorito (favoritosEntity favorito){
+        
+        favorito.setAppID(null);
+        
+        favoritosRepository.save(favorito);
+        
+        return favorito;
+        
+    }
+    
 }
